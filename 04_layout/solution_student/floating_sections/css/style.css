@@ -1,0 +1,45 @@
+/* 5. Add box-sizing: border-box; to everything */
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+  height: 60px;
+  background: #F8CE78;
+  outline: 1px solid black;
+}
+
+aside img {
+	max-width: 100%;
+}
+
+.container {
+  outline: 1px solid red;
+  background: rgba(0,0,200,.2);
+}
+
+/*----------------------------------------------
+  C O L U M N   L A Y O U T
+------------------------------------------------*/
+
+#main {
+  outline: 1px solid black;
+  background: rgba(200,0,0,.5);
+  /* #1. Give a width to each column*/
+  
+  /* #2. Float each column to left*/
+  
+  /* #3. Use padding to add space between columns*/
+  
+}
+
+aside {
+  outline: 1px solid black;
+  background: rgba(0,200,0,.5);
+  /* #1. Give a width to each column*/
+  
+  /* #2. Float each column to left*/
+  
+}
+
+/* #5. Clear anything underneath your columns i.e. a footer */
