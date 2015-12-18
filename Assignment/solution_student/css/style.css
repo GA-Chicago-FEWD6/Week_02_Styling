@@ -1,27 +1,110 @@
 /*
-Project Name: HTML Template
-Client: Your Client
-Author: Your Name
-Developer: @poopsplat in Chicago
+Project Name: Relaxr
+Client: The least demanding client in the history of client-facing work.
+Author: Someone B. Clever
+Developer: elsner.laura@gmail.com in Chicago
 */
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
-body {
-  color: black;
-  font-size: 16px;
-  background: white;
-}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
-/******************************************
-/* PAGES
-/*******************************************/
 
 /******************************************
 /* SECTIONS
 /*******************************************/
+
+/******************************************
+/* GLOBAL STYLES
+/*******************************************/
+
+body {
+	font-family: "Open Sans", Sans;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#main-header {
+	background: #033048;
+	color: #fff;
+
+}
+
+
+#benefits {
+	background: #f0efef;
+}
+
+.benefits-container {
+	width: 50%;
+	margin-left: 100px;
+
+}
+
+#quote {
+	background-image: url(/images/testimonial_bg);
+	background: #033048;
+
+}
+
+.quote-container {
+	color: #fff;
+	font-weight: semibold;
+	font-size: 18px;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+
+}
+
+.button-primary {
+	font-weight: 800;
+	font-size: 14px;
+	border-radius: 5px;
+	background-color: #f9e42e;
+	padding: 10px 23px;
+	color: #033048;
+	margin-left: 
+}
+
+#sign-up {
+	background: #f9e42e;
+	padding: 30px;
+	width: 100%;
+}
+
+.button-secondary {
+	font-weight: 800;
+	font-size: 12px;
+	border-radius: 5px;
+	background-color: #033048;
+	padding: 10px 23px;
+	color: #fff;
+
+}
+
+#footer {
+	background: #121212;
+	color: #fff;
+}
+
+
+
+
+
+
+
