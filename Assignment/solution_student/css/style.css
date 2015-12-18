@@ -25,3 +25,12 @@ body {
 /******************************************
 /* SECTIONS
 /*******************************************/
+
+header {
+    padding: 20px;
+    border: 10px black;
+    background: red;
+}
+
+main {}
+footer {}
