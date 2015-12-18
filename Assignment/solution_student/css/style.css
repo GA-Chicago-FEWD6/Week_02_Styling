@@ -1,8 +1,8 @@
 /*
-Project Name: HTML Template
-Client: Your Client
-Author: Your Name
-Developer: @poopsplat in Chicago
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Sara V.
+Developer: SKV 
 */
 
 /******************************************
@@ -12,6 +12,8 @@ body {
   color: black;
   font-size: 16px;
   background: white;
+  width: 700px;
+  margin: 20px auto;
 }
 
 /******************************************
