@@ -1,0 +1,42 @@
+* {
+  /*margin: 0;*/
+  /* Un-comment the line above to see everything without any margin*/
+}
+
+h1 {
+  padding: 20px;
+  background: red;
+  border: 10px dashed black;
+}
+
+p {
+  color: white;
+  padding: 20px;
+  background: blue;
+  border: 5px dotted black;
+}
+
+code {
+  color: black;
+  padding: 4px;
+  background: white;
+  border: 2px solid #ccc;
+}
+
+h2 {
+  padding: 20px;
+  background: yellow;
+  border: 4px solid black;
+}
+
+ol {
+  padding: 20px;
+  background: gray;
+  border: 2px solid blue;
+}
+
+li {
+  padding: 10px;
+  border: 2px dashed yellow;
+  background: rgba(255,255,255,.5);
+}
