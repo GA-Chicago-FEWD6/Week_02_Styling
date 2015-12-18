@@ -1,0 +1,15 @@
+/* Block-level elements */
+h1, p, ul, li, footer, div {
+  padding: 20px;
+  background: rgba(200,200,200,.5);
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Inline-level elements */
+code, em, span, a, strong {
+  padding: 5px;
+  background: rgba(242,218,0,.5);
+}
