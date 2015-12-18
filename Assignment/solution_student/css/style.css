@@ -1,7 +1,7 @@
 /*
 Project Name: HTML Template
 Client: Your Client
-Author: Your Name
+Author: Carly Brandess
 Developer: @poopsplat in Chicago
 */
 
@@ -9,9 +9,17 @@ Developer: @poopsplat in Chicago
 /* BASE STYLES
 /*******************************************/
 body {
-  color: black;
   font-size: 16px;
   background: white;
+  padding: 50px;
+  color: #05080C;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 70px auto;
+  background: #F6F6F6;
+  border-top: 5px solid #222222;
+  font-family: 'Lora',sans-serif;
+  border-bottom: 5px solid #222222;
 }
 
 /******************************************
