@@ -57,10 +57,17 @@ footer {
 }
 
 header {
-	background-image: url(images/header_bg.jpg);
-	color: #fff;
 	background-color: #033048;
+	background: url("http://imgur.com/Zhov9pU");
+	/*background-image: url("images/header_bg.jpg");*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	color: #fff;
 	padding: 20px;
+	height: 700px;
+	margin: 0 auto;
 
 }
 
@@ -87,7 +94,7 @@ header {
 }
 
 .quote {
-	background-image: url('images/testimonial_bg');
+	background-image: url('images/testimonial_bg.jpg');
 	background: #033048;
 
 }
@@ -111,7 +118,7 @@ header {
 	padding: 10px 23px;
 	color: #033048;
 	display: inline-block;
-
+	background-image: url(images/header_bg.jpg);
 
 }
 
