@@ -44,6 +44,8 @@ almost black: #121212
 
 body {
 	font-family: "Open Sans", Tahoma, Arial;
+/*	width: 1200px;
+	margin: auto;*/
 }
 
 a {
@@ -58,6 +60,11 @@ h1 {
 h2 {
 	font-size: 24px;
 	font-weight: 600;
+}
+
+blockquote {
+	font-style: italic;
+	font-weight: 300;
 }
 
 footer {
@@ -75,19 +82,27 @@ footer {
 	padding: 20px;
 	height: 600px;
 	background-color: #033048;
-	margin-bottom: -30px;
+	background-image: url(http://i.imgur.com/LmUguRt.jpg);
+	background-size: cover;
+	/*margin-bottom: -30px;*/
 }
 
 .button-primary {
 	color: #033048;
+	background-color: #f9e42e;
+	border-radius: 5px;
 	font-weight: 800;
 	font-size: 14px;
-	border-radius: 5px;
-	padding: 10px 30px;
-	background-color: #f9e42e;
-	margin-left: 800px;
+	height: 36px;
 	margin: 0 auto;
+	padding: 9px;
+	text-align: center;
+	width: 200px;
 
+}
+
+.button-primary:hover {
+	background-color: #FFF585;
 }
 
 .hero-content {
@@ -96,7 +111,7 @@ footer {
 }
 
 .hero h1 {
-	padding-left: 20px;
+	padding-left: 100px;
 	margin-bottom: 100px;
 }
 
@@ -108,22 +123,28 @@ footer {
 .benefits {
 	background: #f0efef;
 	padding: 40px;
+	font-weight: 300;
+	font-size: 13px;
+}
 
+.benefits h2 {
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .benefits-container {
-	width: 50%;
+	width: 40%;
 	margin-left: 100px;
 }
 
 .benefits h2 {
 	color: #033048;
-
 }
 
 .quote {
 	background: #033048;
-	background-image: url('images/testimonial_bg.jpg');
+	background-image: url(http://i.imgur.com/Rz2HFCn.jpg);
+	background-size: 100%;
 }
 
 .quote-container {
@@ -131,19 +152,17 @@ footer {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 600;
-	margin: auto;
+	margin: 0 auto;
 	text-align: center;
 	padding: 40px 0;
 }
 
-blockquote {
-	font-style: italic;
-	font-weight: 300;
-}
+
 
 .sign-up {
 	padding: 30px;
 	background: #f9e42e;
+	margin-bottom: -20px;
 }
 
 .button-secondary {
@@ -151,10 +170,19 @@ blockquote {
 	font-size: 12px;
 	font-weight: 800;
 	border-radius: 5px;
-	padding: 10px 30px;
 	background-color: #033048;
-
+	height: 36px;
+	margin: 0 auto;
+	padding: 9px;
+	text-align: center;
+	width: 200px;
 }
+
+.button-secondary:hover {
+	background-color: #00507A;
+}
+
+
 
 footer {
 	margin-top: -20px;
@@ -163,8 +191,8 @@ footer {
 
 footer h1 {
 	color: #f9e42e;
-	padding-top: 40px;
-	padding-left: 40px;
+	text-align: center;
+	padding-top: 30px;
 }
 
 footer p {
@@ -175,17 +203,25 @@ footer p {
 	font-weight: 600;
 }
 
-.social {
-	margin: 0 auto;
-}
-
-.facebook {
-	padding: 20px;
+.social-icons {
+	text-align: center;
 }
 
 .twitter {
-	padding: 20px;
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
+
+.facebook {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
 
 
 
