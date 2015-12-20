@@ -144,7 +144,7 @@ footer {
 .quote {
 	background: #033048;
 	background-image: url(http://i.imgur.com/Rz2HFCn.jpg);
-	background-size: 100%;
+	background-size: cover;
 }
 
 .quote-container {
