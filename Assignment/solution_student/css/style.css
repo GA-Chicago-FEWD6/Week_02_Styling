@@ -2,28 +2,201 @@
 Project Name: Relaxr Landing Page
 Client: Relaxr
 Author: Sara V.
-Developer: SKV 
-*/
+Developer: SKV */
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* Micro clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
+/*Note: I adjusted some of the font weights and sizes from the design_file 
+directions because they didn't look right on my mockup. Was this happening
+for others? I assume different browsers/OSs render fonts and sizes differently?*/
+
 body {
+  width: 50%;
   color: black;
+  opacity: .85;
+  margin: 0 auto;
   font-size: 16px;
-  background: white;
-  width: 700px;
-  margin: 20px auto;
+  font-family: 'open sans', sans-serif;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+header {
+	width: 100%;
+	height: 425px;
+	background-size: cover; /*The word 'cover' didn't change color, which made me think the code was incorrect/broken. Do you know why this happened?*/
+	background-image: url(../images/header_bg.jpg);
+}
 
-/******************************************
-/* PAGES
-/*******************************************/
+h1, 
+h2 {
+	color: #f0efef;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
 
-/******************************************
-/* SECTIONS
-/*******************************************/
+h1,
+h4 {
+	font-weight: 700
+}
+
+h2, 
+h3 {
+	font-weight: 600
+}
+
+
+h1 {
+	padding-top: 20px;
+	padding-left: 50px;
+	margin: 0;
+}
+
+h3 {
+	color: #033048;
+	font-size: 20px;
+}
+
+h4 {
+	margin: 0;
+	color: #f9e42e;
+	font-size: 24px;
+	padding-top: 25px;
+	letter-spacing: 1px;
+	padding-bottom: 40px;
+}
+
+h5 {
+	color: #f0efef;
+	font-size: 9px;
+	font-weight: 600;
+	padding-top: 20px;
+	
+}
+
+a {
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	height: 200px;
+	background-color: #121212;
+
+}
+
+blockquote {
+	margin: 0;
+	height: 200px;
+	color: #f0efef;
+	font-size: 18px;
+	font-weight: 300; /*This is the correct weight (light), but it doesn't look right -- any idea what's happening? I googled a bit and I think it's just because different browsers and OSs render fonts differently?*/
+	padding-top: 40px;
+	font-style: italic;
+	padding-left: 215px;
+	padding-right: 215px;
+	background-size: cover;
+	background-image: url(../images/testimonial_bg.jpg);
+}
+
+.center-text {
+	text-align: center;
+}
+
+.header-cta {
+	margin-top: 70px;
+}
+
+.main {
+	color: #606161;
+	font-weight: 300;
+	background: #f0efef;
+	padding: 20px 300px 20px 50px;
+
+}
+
+.signature {
+	margin-top: 2px;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.yellow-bar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #f9e42e;
+}
+
+.social-media {
+	width: auto;
+	height: 20px;
+}
+
+#get-it-now { /*Is this an appropriate place to use an id?*/
+	color: #121212;
+	font-size: 14px;
+	margin-top: 35px;
+	font-weight: 600;
+	padding: 6px 40px;
+	border-radius: 3px;
+	background: #f9e42e;
+	text-decoration: none;
+	border: 2px solid #f9e42e; /*needed for hover state*/
+}
+
+/*This isn't the most asthetically pleasing hover state, but 
+it's a start!*/
+
+a#get-it-now:hover {
+	border: 2px solid #121212;
+}
+
+#sign-up-now {
+	color: #f0efef;
+	font-size: 12px; 
+	font-weight: 600;
+	padding: 6px 40px;
+	border-radius: 3px; 
+	background: #033048;
+	text-decoration: none;
+	border: 2px solid #033048; /*needed for hover state*/
+}
+
+a#sign-up-now:hover {
+	border: 2px solid #121212;
+}
+
+/*I couldn't figure out where to use a nested selector -- any suggestions?*/
