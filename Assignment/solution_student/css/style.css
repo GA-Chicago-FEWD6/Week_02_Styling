@@ -5,11 +5,97 @@ Author: Carly Brandess
 Developer: @poopsplat in Chicago
 */
 
-/******************************************
-/* BASE STYLES
+/* SETUP
 /*******************************************/
+/* Box Model Hack: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/* Micro clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header { 
+  background-image: url("../images/header_bg.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	color: white;
+	font-weight: extra bold;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+h2 {
+	color: white;
+	font-weight: semibold;
+	font-size: 14px;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 60px;
+}
+
+h3 {
+	color: #033048;
+	font-size: 20px;
+	font-weight: semibold;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
+	width: 50%;
+	text-indent: 20px;
+}
+
+li {
+	text-indent: 20px;
+}
+
+.nowbutton {
+	text-align: center;
+}
+
+.now{
+position: relative;
+top: 50%;
+padding: 10px 15px 11px;
+font-size: 14px;
+background-color: #f9e42e;
+font-weight: bold;
+color: #033048;
+border-radius: 5px;
+text-decoration: none;
+}
+
 body {
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: lighter;
   background: white;
   padding: 50px;
   color: #05080C;
@@ -18,18 +104,75 @@ body {
   margin: 70px auto;
   background: #F6F6F6;
   border-top: 5px solid #222222;
-  font-family: 'Lora',sans-serif;
+  font-family: 'open sans',sans-serif;
   border-bottom: 5px solid #222222;
+  padding-top: none;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
 
-/******************************************
-/* PAGES
-/*******************************************/
+.quote {
+	background-image: url("../images/testimonial_bg.jpg");
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	width: 100%;
+  	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+	padding: 25px;
+}
 
-/******************************************
-/* SECTIONS
-/*******************************************/
+blockquote {
+  	margin: 10 25% 0 25%;
+  	font-weight: bold;
+  	margin top: 20px;
+  	margin bottom: 0;
+  	display: inline-block;
+}
+
+.sign {
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	background-color: #033048;
+	border: 0;
+	margin: 2px 10px 2px 10px;
+	padding: 0;
+	vertical-align: center;
+}
+
+.signupnow {
+	background-color: #f9e42e;
+	background-position: center;
+	text-align: center;
+	height: 70px;
+	padding: 2px 10px 2px 10px;
+
+}
+
+footer{ 
+	background-color: #708090;
+	margin: 0;
+	padding: 0;
+	background-size: 500px;
+	height: 150px;
+}
+
+h5{
+	color: #f9e42e;
+	text-align: center;
+	font-size: 24px;
+	font-weight: extra bold;
+}
+
+h6{ 
+	text-align: center;
+	font-size: 9px;
+	font-weight: semibold;
+	color: white;
+}
