@@ -1,27 +1,239 @@
 /*
-Project Name: HTML Template
-Client: Your Client
-Author: Your Name
-Developer: @poopsplat in Chicago
+Project Name: Landing Page
+Client: Relaxr
+Author: Haley 
+Developer: @needleinthehaley in Chicago
 */
 
+/******************************************
+/* UTILITY
+/*******************************************/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/*i started off with ALL intentions of utilizing the categories 
+outlined in the CSS template. that is SO hard to do when you are
+constantly trying to figure everything out. i didn't do it this 
+time, but if i have time i'll go back in and sort. i'm sure 
+duplication of code is annoying to review.*/
 /******************************************
 /* BASE STYLES
 /*******************************************/
 body {
-  color: black;
-  font-size: 16px;
-  background: white;
+	color: black;
+	margin: 0;
+	font-size: 16px;
+	font-family: 'open sans', sans-serif;
+	width: 100%;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+/****************************************/
+/*it looks like there is an opacity piece on top of my image, 
+but i can't figure it out! why is it so hazy?*/
+header {
+	background-image: url("../images/header_bg.jpg");
+	background-repeat: no-repeat;
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+}
 
-/******************************************
-/* PAGES
-/*******************************************/
+footer {
+	background: #121212;
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	padding-top: 10px;
+	text-align: center;
+	opacity: 0.9;
 
-/******************************************
-/* SECTIONS
-/*******************************************/
+}
+
+/*the google font weights look very thick (compared to the PNG)
+i tweaked, but i read the doc! trust you, me. i try to follow
+directions*/
+h1, h2 { 
+	font-size: 24px;
+	color: #f0efef;
+}
+
+h1 {
+	font-weight: 700;	
+	margin-left: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+
+h2 {
+	font-weight: 500;
+	margin-left: 300px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #033048;
+	margin-left: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+
+/*hmmm, i am now questioning where to use margin and where to
+use padding. rule of thumb?*/
+h4 { 
+	color: #f9e42e;
+	padding-top: 20px;
+	font-size: 24px;
+	padding-bottom: 25px;
+	margin: 0px;
+}
+
+h5 {
+	font-size: 9px;
+	font-style: bold;
+	color: white;
+	padding-top: 10px;
+}
+
+/*i'm bummed i couldn't really figure out this spacing. i 
+changed margins instead of using <br> but i don't understand
+how margins work with fixed elements*/
+p {
+	color: #606161;
+	font-size: 13px;
+	font-weight: lighter;
+	margin-left: 50px;
+	margin-right: 650px;
+}
+
+ul {
+	color: #606161;
+	font-size: 13px;
+	font-weight: lighter;
+	margin-left: 50px;
+	margin-right: 700px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	margin-bottom: 0px;
+}
+
+/*how do i get this button longer? i tried to change the width
+(see below) and nothing! */
+#now {
+	background-color: #f9e42e;
+	color: #121212;
+	margin-top: 40px;
+	margin-left: 450px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 800px;
+	width: 200px;
+	padding: 5px 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/*i used the same styling for these buttons, but
+one was significantly smaller. i had to do display: block 
+the second button and stylize it differently. why? also, 
+the buttons aren't responsive... they're based off margins,
+is this right?*/
+
+#now2 {
+	background: #033048;
+	color: white;
+	margin-left: 450px;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 600px;
+	padding-top: 15px;
+	border-radius: 5px;
+	display: block;
+	height: 50px;
+	width: 200px;
+	text-align: center;
+
+}
+
+#now:hover {
+	background-color: white;
+}
+
+#now2:hover {
+	background-color: gray;
+}
+
+#main {
+	background-color: #f0efef;
+}
+
+/*this image seems WAY darker than the one in the PNG so i tried to 
+add opacity... to no avail.*/
+blockquote {
+	background-image: url("../images/testimonial_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;	
+	width: 100%;
+	height: 200px;
+	padding-top: 35px;
+	padding-left: 250px;
+	padding-right: 250px;
+	margin: 0;
+	font-weight: lighter;
+	font-style: italic;
+	color: #f0efef;
+	text-align: center;
+	text-indent: inherit;
+	opacity: 0.9;
+
+}
+
+/*i know you noted not to use a <br> but i can't figure out how 
+to get that name on the next line*/
+span {
+	font-size: 18px;
+	font-weight: 600px;
+	font-style: normal;
+	margin: 5px;
+	padding-top: 10px;
+
+}
+
+.sign_up {
+	background-color: #f9e42e;
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+}
+
+
+.social {
+	width: auto;
+	height: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+

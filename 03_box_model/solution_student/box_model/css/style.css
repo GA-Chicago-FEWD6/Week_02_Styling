@@ -1,0 +1,39 @@
+h1 {
+	margin: 0px ;
+	padding: 20px;
+	background: red;
+	border: 10px dashed black;
+}
+
+p {
+	background: blue;
+	color: white;
+	padding: 20px;
+	border: 5px solid black;
+}
+
+code {
+	background: white;
+	color: black;
+	padding: 1px;
+	border: 2px solid gray;
+}
+
+h2 {
+	padding: 10px;
+	background: green;
+	border: 2px dotted black;
+
+}
+
+ol {
+	padding: 1px;
+	background: silver; 
+	border: 3px solid blue;
+}
+
+li {
+	padding: 20px 10px 20px 10px;
+	background: turquoise;
+	border: 10px dotted white;
+}
