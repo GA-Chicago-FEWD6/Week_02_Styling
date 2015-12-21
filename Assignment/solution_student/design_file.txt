@@ -7,7 +7,7 @@ For today, we'll be making a simplified version of the site which uses only one 
 
 ---
 
-benefits background color: #f0efef
+benefits background color: #f0efef  V
 yellow: #f9e42e
 dark blue: #033048
 light grey: #606161
@@ -16,10 +16,13 @@ almost black: #121212
 Font: Open Sans (Google Font: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans)
 Weight: Light, Light Italic, Semibold, Extrabold
 
-"Relaxr" - Extra bold, 24px
-"Get piece of mind with a single tap" - Semibold, 24px
-"Get it Now" - Extra bold, 14px. 5px border radius
-"Benefits" - Semibold, 20px
+"Relaxr" - Extra bold, 24px  ;Extra-Bold 800 V
+"Get piece of mind with a single tap" - Semibold, 24px  ;Semi-Bold 600 V
+
+Get it Now *V
+
+
+"Benefits" - Semibold, 20px ;Semi-Bold 600
 "The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be." - Light, 13px
 • Schedule meetings for you
 • Excel automation to complete your work for you

@@ -1,23 +1,28 @@
 /*
-Project Name: HTML Template
-Client: Your Client
-Author: Your Name
-Developer: @poopsplat in Chicago
+Project Name: Relaxr page
+Client: 
+Author: Artem Rykalin
+Developer: @rykalin in Chicago
 */
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 body {
-  color: black;
-  font-size: 16px;
-  background: white;
-}
-
+	color: white;
+  	font-family: "Open Sans", sans-serif;
+  	font-size: 16px;
+  	background: #606161;
+  	text-align: center;
+  	margin-left: 50px;
+	margin-right: 50px;
+  } 
 /******************************************
 /* LAYOUT
 /*******************************************/
-
+#water_image, #water_image2 {
+	position: ???;
+}
 /******************************************
 /* PAGES
 /*******************************************/
@@ -25,12 +30,72 @@ body {
 /******************************************
 /* SECTIONS
 /*******************************************/
+ 
 
-header {
-    padding: 20px;
-    border: 10px black;
-    background: red;
+#headerA {
+	font-weight: 800;
+	font-size: 24px;
+	text-align: left;		
+}
+#headerB {
+	font-weight: 600;
+	font-size: 24px;
+}
+#headerButtonC {
+	font-weight: 600;
+	font-size: 18px;
+	color: #121212;
+    border-radius: 5px;
+    background-color: #f9e42e;
+}	
+#mainA {
+	font-weight: 600;
+	font-size: 20px;
+	text-align: left;
+	color: #121212;
+}
+#mainB {
+	font-weight: 300;
+	font-size: 13px;
+	text-align: left;
+	color: #121212;
+}
+#mainC {
+	font-weight: 300;
+	font-size: 13px;
+	text-align: left;
+	color: #121212;	
+}
+#mainD {
+	font-weight: 300;
+	font-size:  18px;
+	font-style: italic;
+	color: #121212;
+}
+#mainE {
+	font-weight: 600;
+	font-size:  18px;
+	color: #121212;
+}
+main {
+	background-color: #f0efef;
+}
+#footerA {
+	font-weight: 800;
+	font-size:  12px;
+	padding: 5px;
+    margin color: yellow 2px;
+    background-color: #033048;
+}
+#footerB {
+	font-weight: 800;
+	font-size:  24px;
+	color: #f9e42e;
+}
+#footerC {
+	font-weight: 600;
+	font-size:  9px;	
 }
 
-main {}
-footer {}
+
+
