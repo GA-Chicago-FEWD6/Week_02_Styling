@@ -1,27 +1,231 @@
 /*
-Project Name: HTML Template
-Client: Your Client
-Author: Your Name
-Developer: @poopsplat in Chicago
+Project Name: Relaxr
+Client: The least demanding client in the history of client-facing work.
+Author: Someone B. Clever
+Developer: elsner.laura@gmail.com in Chicago
 */
 
 /******************************************
-/* BASE STYLES
+/* SETUP
 /*******************************************/
-body {
-  color: black;
-  font-size: 16px;
-  background: white;
+/* Box Model Hack: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/* Micro clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+	mar
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+  clear: both;
 }
 
 /******************************************
-/* LAYOUT
+/* GLOBAL STYLES
 /*******************************************/
 
-/******************************************
-/* PAGES
-/*******************************************/
+/*COLORS
+benefits background color: #f0efef
+yellow: #f9e42e
+dark blue: #033048
+light grey: #606161
+almost black: #121212
+*/
+
+
+body {
+	font-family: "Open Sans", Tahoma, Arial;
+/*	width: 1200px;
+	margin: auto;*/
+
+	/*Just keeping this in here in case we are doing a fixed width for part 2 of the assignment.*/
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+blockquote {
+	font-style: italic;
+	font-weight: 300;
+}
+
+footer {
+	background: #121212;
+}
+
+
 
 /******************************************
 /* SECTIONS
 /*******************************************/
+
+.hero {
+	color: #fff;
+	padding: 20px;
+	height: 600px;
+	background-color: #033048;
+	background-image: url(http://i.imgur.com/LmUguRt.jpg);
+	background-size: cover;
+}
+
+.button-primary {
+	color: #033048;
+	background-color: #f9e42e;
+	transition: background-color 0.5s ease;
+	/*Doing a little experimenting with transtions*/
+	border-radius: 5px;
+	font-weight: 800;
+	font-size: 14px;
+	height: 36px;
+	margin: 0 auto;
+	padding: 9px;
+	text-align: center;
+	width: 200px;
+
+}
+
+.button-primary:hover {
+	background-color: #FFF585;
+}
+
+.hero-content {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.hero h1 {
+	padding-left: 100px;
+	margin-bottom: 100px;
+}
+
+.hero h2 {
+	margin-bottom: 100px;
+	text-align: center;
+	/*Assuming this is probably not the best habit to get into (repeatedly overriding global styles, that is)*/
+}
+
+.benefits {
+	background: #f0efef;
+	padding: 40px;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.benefits h2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.benefits-container {
+	width: 40%;
+	margin-left: 100px;
+}
+
+.benefits h2 {
+	color: #033048;
+}
+
+.quote {
+	background: #033048;
+	background-image: url(http://i.imgur.com/Rz2HFCn.jpg);
+	/*I couldn't get the relative URL to work - this was panic mode*/
+	background-size: cover;
+}
+
+.quote-container {
+	width: 50%;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.sign-up {
+	padding: 30px;
+	background: #f9e42e;
+	margin-bottom: -20px;
+	/*This negative margin thing kind of feels hacky*/
+}
+
+.button-secondary {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 800;
+	border-radius: 5px;
+	background-color: #033048;
+	transition: background-color 0.5s ease;
+	/*Doing a little experimenting with transtions*/
+	height: 36px;
+	margin: 0 auto;
+	padding: 9px;
+	text-align: center;
+	width: 200px;
+}
+
+.button-secondary:hover {
+	background-color: #00507A;
+}
+
+footer h1 {
+	color: #f9e42e;
+	text-align: center;
+	padding-top: 30px;
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 9px;
+	font-weight: 600;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.twitter {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.facebook {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+

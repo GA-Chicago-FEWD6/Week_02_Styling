@@ -5,6 +5,7 @@ ol li {
 	margin-bottom: 10px;
 	font-size: 17px;
 	font-family: Georgia, serif;
+
 }
 
 ul {
@@ -21,3 +22,16 @@ ul {
 /*---------------------------------------------------------------------
     P L A C E   Y O U R   C S S   B E L O W   T H I S   C O M M E N T
 -----------------------------------------------------------------------*/
+
+#one li {
+	display: inline-block;
+}
+
+
+#two a {
+	display: block;
+}
+
+#three img {
+	display: none;
+}

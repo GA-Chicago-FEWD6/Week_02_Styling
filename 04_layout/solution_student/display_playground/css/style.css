@@ -12,4 +12,9 @@ li {
 code, em, span, a, strong {
   padding: 5px;
   background: rgba(242,218,0,.5);
+  width: 100px;
+  margin: 20px;
+  display: inline-block;
+
+
 }
