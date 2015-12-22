@@ -1,0 +1,20 @@
+#notification {
+  color: white;
+  padding: 5px;
+  background: green;
+}
+
+.message {
+  padding: 5px;
+  background: #ccc;
+}
+
+.error {
+  color: red;
+}
+
+.big {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

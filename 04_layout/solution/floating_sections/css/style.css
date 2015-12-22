@@ -1,0 +1,55 @@
+/* 5. Add box-sizing: border-box; to everything */
+* {
+  box-sizing: border-box;
+}
+
+/* Bonus! Clearfixnig the container so it doesn't collapse */
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+header, footer {
+  height: 60px;
+  background: #F8CE78;
+  outline: 1px solid black;
+}
+
+aside img {
+	max-width: 100%;
+}
+
+.container {
+  outline: 1px solid red;
+  background: rgba(0,0,200,.2);
+}
+
+/*----------------------------------------------
+  C O L U M N   L A Y O U T
+------------------------------------------------*/
+
+#main {
+  outline: 1px solid black;
+  background: rgba(200,0,0,.5);
+  /* #1. Give a width to each column*/
+  width: 60%;
+  /* #2. Float each column to left*/
+  float: left;
+  /* #3. Use padding to add space between columns*/
+  padding-right: 20px;
+}
+
+aside {
+  outline: 1px solid black;
+  background: rgba(0,200,0,.5);
+  /* #1. Give a width to each column*/
+  width: 40%;
+  /* #2. Float each column to left*/
+  float: left;
+}
+
+/* #5. Clear anything underneath your columns i.e. a footer */
+footer {
+  clear: both;
+}

@@ -1,0 +1,176 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Matt Soria
+Developer: @poopsplat in Chicago
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+/* Box Model Hack: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/* Micro clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  color: #121212;
+  font-size: 16px;
+  background: #f0efef;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, ul, ol {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.logo {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Buttons */
+.button {
+  height: 40px;
+  width: 180px;
+  color: #033048;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  background: #f9e42e;
+  text-decoration: none;
+  display: inline-block;
+  transition: color .2s ease-out, background .2s ease-out;
+}
+.button:hover {
+  color: #f9e42e;
+  background: #033048;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.inner-container {
+  margin: 0 auto;
+  padding: 0 116px;
+  max-width: 1200px;
+}
+
+/******************************************
+/* SECTIONS
+/*******************************************/
+
+/* Site Header */
+header {
+  height: 400px;
+  padding: 40px 0;
+  text-align: center;
+  background-image: url('../images/header_bg.jpg');
+  background-size: cover;
+}
+header .logo {
+  color: #f0efef;
+  text-align: left;
+}
+header h2 {
+  color: #f0efef;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 116px 0;
+}
+.benefits h2 {
+  margin-top: 0;
+  color: #033048;
+  font-size: 20px;
+  font-weight: 600;
+}
+.benefits p {
+  max-width: 350px;
+}
+
+/* Testimonial Section */
+.testimonial {
+  color: #f0efef;
+  padding: 60px 0;
+  text-align: center;
+  background-image: url('../images/testimonial_bg.jpg');
+  background-size: cover;
+}
+.testimonial blockquote {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 400px;
+}
+.testimonial blockquote p {
+  font-size: 18px;
+  font-style: italic;
+}
+.testimonial blockquote footer {
+  font-weight: 600;
+}
+
+/* Signup Section */
+.signup {
+  padding: 20px 0;
+  text-align: center;
+  background: #f9e42e;
+}
+.signup .button {
+  color: #f0efef;
+  background: #033048;
+}
+.signup .button:hover {
+  background: #5F748F;
+}
+
+/* Site Footer */
+.site-footer {
+  color: #f0efef;
+  padding: 40px 0;
+  text-align: center;
+  background: #2E2E2E;
+}
+.site-footer .logo {
+  color: #f9e42e;
+}
+.social-links {
+  padding: 0;
+  margin: 40px 0;
+}
+.social-links li {
+  margin: 0 20px;
+  list-style: none;
+  display: inline-block;
+}
+.copyright {
+  font-size: 9px;
+  font-weight: 600;
+}

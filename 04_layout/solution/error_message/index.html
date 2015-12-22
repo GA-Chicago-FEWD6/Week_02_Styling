@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Error Message</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <h1>Classes and IDs</h1>
+
+    <p>Say we have a notification to style, with an id of <code>notification</code>.<p>
+
+    <div id="notification">
+      <p>This has an <strong>id</strong> of <code>notification</code>, so it is selected in CSS with <code>#notification</code>. Check it out.</p>
+    </div>
+
+    <p>But what if we have many messages on the page which are meant to look similar?</p>
+
+    <div class="message">
+      <p>This is in an element with a <strong>class</strong> of <code>message</code>, so it can be selected in CSS with <code>.message</code>.</p>
+    </div>
+
+    <div class="message">
+      <p>This is in another element with a <strong>class</strong> of <code>message</code>, so it gets styled too.</p>
+    </div>
+
+    <div class="message">
+      <p>A third element with a <strong>class</strong> of <code>message</code>, for good measure. One CSS selector styles all of these.</p>
+    </div>
+
+    <h2>IDs are singular, Classes are plural</h2>
+
+    <p>An ID is meant to be used only once in a given HTML document. A given element can have only one ID.</p>
+
+    <p>A class can be reused as many times as needed in a given HTML document. A given element can have multiple classes.</p>
+
+    <h2>Using Multiple Classes</h2>
+
+    <p>An element can be given multiple classes, separated by spaces, such as <code>class="foo bar baz"</code>.</p>
+
+    <div class="message error big">
+      <p>This has <code>class="message error"</code>, meaning it has two classes: <code>message</code> and <code>error</code>. It will get styles from <code>.message</code> and <code>.error</code>. The styles for <code>.error</code> override the default styles, which we achieve by placing them after the styles for <code>.message</code>.</p>
+    </div>
+
+  </body>
+
+</html>
