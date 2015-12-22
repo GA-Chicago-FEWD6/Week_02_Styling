@@ -11,5 +11,8 @@ li {
 /* Inline-level elements */
 code, em, span, a, strong {
   padding: 5px;
+  width: 100px;
+  margin: 20px;
+  display: none;
   background: rgba(242,218,0,.5);
 }

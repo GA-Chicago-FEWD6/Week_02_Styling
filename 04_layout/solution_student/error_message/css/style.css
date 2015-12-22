@@ -1,0 +1,16 @@
+#notification {
+	padding: 10px;
+	background: orange;
+}
+
+.message {
+	padding: 5px;
+	margin: 10px 0;
+	background: gray;
+}
+
+.error {
+	color: red;
+	background: blue;
+}
+

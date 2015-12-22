@@ -1,4 +1,3 @@
-Relaxr Landing Page: Part 1
 ==================
 
 We'll be working on this site for the next three classes, just a heads up.
