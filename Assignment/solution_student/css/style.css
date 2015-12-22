@@ -6,18 +6,175 @@ Developer: @poopsplat in Chicago
 */
 
 /******************************************
+/* SETUP
+/*******************************************/
+/* Box Model Hack: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/* Micro clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/******************************************
 /* BASE STYLES
 /*******************************************/
 body {
-  color: black;
-  font-size: 16px;
-  background: white;
+  	color: #121212;
+  	font-size: 16px;
+  	font-weight: 300;
+  	margin-top: 0px;
 }
+
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+	text-align: left;
+	color: #FFF;
+	padding: 25px 10px 10px 10%;
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	color: #FFF;
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: #033048;
+}
+
+h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+	text-align: center;
+	color: #f9e42e;
+}
+
+h5{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+}
+
+a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 800;
+	border-radius: 5px; 
+}
+
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+.container{
+	padding: 0px;
+	width: 80%;
+	margin: auto;
+	margin-top: 0px;
 
+}
+
+.header{
+ 	text-align: center;
+ 	background-image: url(../images/header_bg.jpg);
+ 	background-size: 100%;
+ 	background-repeat: no-repeat;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	height: 450px;
+}
+
+.main{
+	text-align: 0px;
+	background-color: #f0efef;
+	margin: 0px;
+	padding: 30px 40% 40px 60px;
+}
+
+.signup{
+	background-color: #f9e42e;
+	padding: 25px 0px 25px 0px;
+	text-align: center; 
+}
+
+.quote{
+	background-image: url(../images/testimonial_bg.jpg);
+	text-align: center;
+	background-size: 100%;
+ 	background-repeat: no-repeat;
+ 	padding: 50px 25% 50px 25%;
+ 	margin: 0px;
+ 	height: 250px;
+ 	color: white;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-size: 18px;
+	font-weight: 300 italic;
+}
+
+.footer{
+	color: #FFF;
+	background-color: #121212;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.button1{
+	display: block;
+ 	height: 50px;
+ 	width: 200px;
+ 	background: #f9e42e;
+ 	border-radius: 5px;
+ 	text-align: center;
+ 	margin: 100px auto 50px auto;
+ 	padding-top: 15px;	
+ 	color:#033048;
+ 	text-decoration: none;
+ }
+
+a.button1:hover{
+	background: #FCEE74;
+}
+.button2{
+	display: block;
+ 	height: 50px;
+ 	width: 200px;
+ 	background: #033048;
+ 	border-radius: 5px;
+ 	text-align: center;
+ 	margin: auto;
+ 	padding-top: 15px;	
+ 	color:#fff;
+ 	text-decoration: none;
+}
+
+a.button2:hover{
+	background: #01527D;
+}
+
+.button3{
+	padding: 20px;
+}
 /******************************************
 /* PAGES
 /*******************************************/
