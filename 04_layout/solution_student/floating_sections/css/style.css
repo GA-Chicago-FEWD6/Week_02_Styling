@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+/*Utility Class*/
+.clearfix:after {
+  content: '';
+  display: table; 
+  clear: both;
+}
+
 header, footer {
   height: 60px;
   background: #F8CE78;
@@ -25,6 +32,9 @@ aside img {
 #main {
   outline: 1px solid black;
   background: rgba(200,0,0,.5);
+  width: 75%;
+  float: left;
+  padding-right: 40px;
   /* #1. Give a width to each column*/
   
   /* #2. Float each column to left*/
@@ -36,6 +46,8 @@ aside img {
 aside {
   outline: 1px solid black;
   background: rgba(0,200,0,.5);
+  width: 25%;
+  float: left;
   /* #1. Give a width to each column*/
   
   /* #2. Float each column to left*/
@@ -43,3 +55,6 @@ aside {
 }
 
 /* #5. Clear anything underneath your columns i.e. a footer */
+footer {
+  clear: both;
+}
