@@ -11,11 +11,23 @@ ul {
 	padding-left: 0;
 }
 
-#one li {
+li {
 	background-color: yellow;
 	list-style: none;
 	border: 1px solid red;
 	padding: 10px;
+}
+
+#one li {
+	display: inline-block;
+}
+
+#two a {
+	display: block;
+}
+
+#three img {
+	display: none
 }
 
 /*---------------------------------------------------------------------
