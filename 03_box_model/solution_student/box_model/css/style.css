@@ -1,0 +1,36 @@
+h1 {
+	padding: 20px;
+	border: 10px dashed black;
+	background: red;
+}
+
+p{
+background: blue;
+color: white;
+padding: 20px;
+border: 5px solid black;
+}
+code{
+	background: white;
+	color: black;
+	padding: 5px;
+	border: 2px solid gray;
+}
+h2 {
+	pborder: 3px dotted black;
+
+	background: red;
+	padding: 10px;
+	border: 10px;
+}
+
+p{	
+
+}
+
+li{
+	padding: 10px;
+	border: 2px dashed yellow;
+	 
+}
+
