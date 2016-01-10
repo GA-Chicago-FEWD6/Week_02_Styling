@@ -1,27 +1,184 @@
 /*
-Project Name: HTML Template
-Client: Your Client
-Author: Your Name
-Developer: @poopsplat in Chicago
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Andrea Watts
+Developer: @wattsand in Chicago
 */
+
+/******************************************
+/* SETUP
+/*******************************************/
+/* Box Model Hack: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+/* Micro clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
 body {
   color: black;
   font-size: 16px;
-  background: white;
+  font-family: 'open sans', sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  opacity: .85;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+header{
+	color: #606161;
+	background-image: url(../images/header_bg.jpg);
+	background-position: center top;
+	background-size: cover;
+	width: 100%;
+	height: 375px;
+}
 
-/******************************************
-/* PAGES
-/*******************************************/
+h1,h2{
+	color: #f0efef;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
 
-/******************************************
-/* SECTIONS
-/*******************************************/
+h1{
+	font-weight: 800;
+	padding-top: 10px;
+	padding-left: 50px;
+}
+
+h2{
+	font-weight: 600;
+	padding-top: 40px;
+}
+
+h3{
+	color: #033048;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+h4{
+	color: #f9e42e;
+	font-size: 24px;
+	font-weight: 800;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+a{
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+h6{
+	color: #f0efef;
+	font-size: 9px;
+	font-weight: 600;
+}
+
+
+blockquote{
+	color: #f0efef;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+  	display:block;
+  	position: relative;
+  	background-image: url(../images/testimonial_bg.jpg);
+	background-position: center top;
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	padding-top: 40px;
+	padding-right: 150px;
+	padding-left: 150px;
+}
+
+footer{
+	background: #121212;
+	background-size: cover;
+	width: 100%;
+	min-height: 150px;
+	padding-top: 20px;
+}
+
+#getitnow{
+	background: #f9e42e;
+	color:  #121212;
+	font-size: 14px;
+	font-weight: 800;
+	text-decoration: none;
+	margin-top: 30px;
+	padding: 5px 20px;
+	border-radius: 5px;
+}
+
+#signupnow{
+	background: #033048;
+	color: #f0efef;
+	font-style: 12px;
+	font-weight: 800;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 20px;
+	border-radius: 5px;
+}
+
+.center-text{
+	text-align: center;	
+}
+
+.yellow{
+	background: #f9e42e;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+.benefits{
+	background-color:#f0efef;
+	color: #606161;
+	font-weight: 300;
+	font-size: 13px;
+	padding: 30px 250px 30px 50px;
+}
+
+.amanda{
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	margin-top: 2px;
+}
+
+.socialmedia{
+	width: auto;
+	height: 15px;
+	}
+
+a:hover{
+	border: dotted;
+}
+
+/*I did not include a nested selcetor, where would you suggest
+including one?*/
